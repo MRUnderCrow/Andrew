@@ -1,0 +1,20 @@
+def what_to_wear(temperature, is_rainy, is_raining_heavily):
+    if 20 < temperature < 30:
+        if is_rainy:
+            return "футболку, шорты и дождевик"
+        else:
+            return "футболку и шорты"
+    elif temperature > 0:
+        if is_rainy:
+            if is_raining_heavily:
+                return "пальто, резиновые сапоги и зонт"
+            else:
+                return "пальто и дождевик"
+        else:
+            return "пальто"
+    else:
+        return "пуховик"
+temperature=20
+is_rainy=True
+is_raining_heavily=False
+print(what_to_wear(temperature, is_rainy, is_raining_heavily))
