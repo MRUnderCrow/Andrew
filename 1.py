@@ -1,0 +1,18 @@
+temperature=20
+is_rainy=True
+is_raining_heavily=False
+if 20 < temperature < 30:
+	if is_rainy:
+		print("футболку, шорты и дождевик")
+	else:
+		print("футболку и шорты")
+elif temperature > 0:
+	if is_rainy:
+		if is_raining_heavily:
+			print("пальто, резиновые сапоги и зонт")
+		else:
+			print ("пальто и дождевик")
+	else:
+		print ("пальто")
+else:
+	print ("пуховик")
